@@ -11,6 +11,4 @@ $stmt->execute();
 $datos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $json = json_encode($datos);
 // Establece la cabecera para indicar que la respuesta es json
-header('Content-Type: application/json');
-
-echo $json;
+include '../auth.php';

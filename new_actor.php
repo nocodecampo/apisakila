@@ -24,6 +24,5 @@ if (isset($_POST["name"]) && ($_POST["lastname"])) {
     ];
     $json = json_encode($response);
 }
-header('Content-Type: application/json');
-echo $json;
+include 'auth.php';
 ?>
