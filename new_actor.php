@@ -1,5 +1,5 @@
 <?php
-
+require_once '../validar_acceso.php';
 if (isset($_POST["name"]) && ($_POST["lastname"])) {
 
     include 'dbconnect.php';

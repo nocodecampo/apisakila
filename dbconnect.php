@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include_once 'config.php';
 // Configuración de la base de datos
 $servername = HOST;
 $username = DB_USER;

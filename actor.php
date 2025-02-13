@@ -1,4 +1,5 @@
 <?php 
+require_once 'validar_acceso.php';
 include 'dbconnect.php';
 $sql ="SELECT actor_id, first_name, last_name FROM actor WHERE actor_id = :actor_id";
 $stmt = $conn->prepare($sql);

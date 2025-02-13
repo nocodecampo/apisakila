@@ -1,4 +1,5 @@
 <?php
+require_once '../validar_acceso.php';
 include '../dbconnect.php';
 $sql = "SELECT actor.actor_id, actor.first_name, actor.last_name, film.title
 FROM actor

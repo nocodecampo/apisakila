@@ -1,4 +1,5 @@
 <?php 
+require_once '../validar_acceso.php';
 include '../dbconnect.php';
 $sql ="SELECT 
 film.title, 
