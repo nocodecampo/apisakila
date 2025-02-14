@@ -6,7 +6,7 @@ $result = $conn->query($sql);
 $datos = $result->fetchAll(PDO::FETCH_ASSOC);
 $json = json_encode($datos);
 
-include 'auth.php';
+include '../auth.php';
 
 
 ?>
