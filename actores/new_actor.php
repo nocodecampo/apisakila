@@ -2,7 +2,7 @@
 require_once '../validar_acceso.php';
 if (isset($_POST["name"]) && ($_POST["lastname"])) {
 
-    include 'dbconnect.php';
+    include '../dbconnect.php';
     $sql = "INSERT INTO actor (first_name, last_name)
     VALUES (:first_name, :last_name)";
     $stmt = $conn->prepare($sql);
